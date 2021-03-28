@@ -23,5 +23,9 @@ public class TestNgMavenExampleTest {
         System.out.println("Test one suite param is: " + param);
         System.out.println(test);
     }
+    @Test
+    public void oneMoreTest() {
+        System.out.println("Test Two: This is a test in QA Env");
+    }
 }
 //run this from command prompt: mvn -Dtest=TestNgMavenExampleTest test

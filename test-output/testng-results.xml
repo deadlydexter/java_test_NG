@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="32" started-at="2021-03-28T21:52:16Z" finished-at="2021-03-28T21:52:16Z">
+  <suite name="Default suite" duration-ms="36" started-at="2021-03-28T22:26:43Z" finished-at="2021-03-28T22:26:43Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="32" started-at="2021-03-28T21:52:16Z" finished-at="2021-03-28T21:52:16Z">
+    <test name="Default test" duration-ms="36" started-at="2021-03-28T22:26:43Z" finished-at="2021-03-28T22:26:43Z">
       <class name="javatestNGProject.TestNgMavenExampleTest">
-        <test-method status="PASS" signature="prameterTestOne(java.lang.String)[pri:0, instance:javatestNGProject.TestNgMavenExampleTest@51efea79]" name="prameterTestOne" duration-ms="7" started-at="2021-03-28T17:52:16Z" data-provider="scenarios" finished-at="2021-03-28T17:52:16Z">
+        <test-method status="PASS" signature="oneMoreTest()[pri:0, instance:javatestNGProject.TestNgMavenExampleTest@51efea79]" name="oneMoreTest" duration-ms="9" started-at="2021-03-28T18:26:43Z" finished-at="2021-03-28T18:26:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- oneMoreTest -->
+        <test-method status="PASS" signature="prameterTestOne(java.lang.String)[pri:0, instance:javatestNGProject.TestNgMavenExampleTest@51efea79]" name="prameterTestOne" duration-ms="1" started-at="2021-03-28T18:26:43Z" data-provider="scenarios" finished-at="2021-03-28T18:26:43Z">
           <params>
             <param index="0">
               <value>
@@ -18,7 +22,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- prameterTestOne -->
-        <test-method status="PASS" signature="prameterTestOne(java.lang.String)[pri:0, instance:javatestNGProject.TestNgMavenExampleTest@51efea79]" name="prameterTestOne" duration-ms="1" started-at="2021-03-28T17:52:16Z" data-provider="scenarios" finished-at="2021-03-28T17:52:16Z">
+        <test-method status="PASS" signature="prameterTestOne(java.lang.String)[pri:0, instance:javatestNGProject.TestNgMavenExampleTest@51efea79]" name="prameterTestOne" duration-ms="0" started-at="2021-03-28T18:26:43Z" data-provider="scenarios" finished-at="2021-03-28T18:26:43Z">
           <params>
             <param index="0">
               <value>
@@ -29,7 +33,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- prameterTestOne -->
-        <test-method status="PASS" signature="prameterTestOne(java.lang.String)[pri:0, instance:javatestNGProject.TestNgMavenExampleTest@51efea79]" name="prameterTestOne" duration-ms="1" started-at="2021-03-28T17:52:16Z" data-provider="scenarios" finished-at="2021-03-28T17:52:16Z">
+        <test-method status="PASS" signature="prameterTestOne(java.lang.String)[pri:0, instance:javatestNGProject.TestNgMavenExampleTest@51efea79]" name="prameterTestOne" duration-ms="1" started-at="2021-03-28T18:26:43Z" data-provider="scenarios" finished-at="2021-03-28T18:26:43Z">
           <params>
             <param index="0">
               <value>
@@ -40,7 +44,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- prameterTestOne -->
-        <test-method status="PASS" signature="prameterTestOne(java.lang.String)[pri:0, instance:javatestNGProject.TestNgMavenExampleTest@51efea79]" name="prameterTestOne" duration-ms="1" started-at="2021-03-28T17:52:16Z" data-provider="scenarios" finished-at="2021-03-28T17:52:16Z">
+        <test-method status="PASS" signature="prameterTestOne(java.lang.String)[pri:0, instance:javatestNGProject.TestNgMavenExampleTest@51efea79]" name="prameterTestOne" duration-ms="2" started-at="2021-03-28T18:26:43Z" data-provider="scenarios" finished-at="2021-03-28T18:26:43Z">
           <params>
             <param index="0">
               <value>
