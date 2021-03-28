@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="32" started-at="2021-03-28T21:52:16Z" finished-at="2021-03-28T21:52:16Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="32" started-at="2021-03-28T21:52:16Z" finished-at="2021-03-28T21:52:16Z">
+      <class name="javatestNGProject.TestNgMavenExampleTest">
+        <test-method status="PASS" signature="prameterTestOne(java.lang.String)[pri:0, instance:javatestNGProject.TestNgMavenExampleTest@51efea79]" name="prameterTestOne" duration-ms="7" started-at="2021-03-28T17:52:16Z" data-provider="scenarios" finished-at="2021-03-28T17:52:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TEstOne]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prameterTestOne -->
+        <test-method status="PASS" signature="prameterTestOne(java.lang.String)[pri:0, instance:javatestNGProject.TestNgMavenExampleTest@51efea79]" name="prameterTestOne" duration-ms="1" started-at="2021-03-28T17:52:16Z" data-provider="scenarios" finished-at="2021-03-28T17:52:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TEstTwo]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prameterTestOne -->
+        <test-method status="PASS" signature="prameterTestOne(java.lang.String)[pri:0, instance:javatestNGProject.TestNgMavenExampleTest@51efea79]" name="prameterTestOne" duration-ms="1" started-at="2021-03-28T17:52:16Z" data-provider="scenarios" finished-at="2021-03-28T17:52:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TEstTHREE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prameterTestOne -->
+        <test-method status="PASS" signature="prameterTestOne(java.lang.String)[pri:0, instance:javatestNGProject.TestNgMavenExampleTest@51efea79]" name="prameterTestOne" duration-ms="1" started-at="2021-03-28T17:52:16Z" data-provider="scenarios" finished-at="2021-03-28T17:52:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TEstfour]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prameterTestOne -->
+      </class> <!-- javatestNGProject.TestNgMavenExampleTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
