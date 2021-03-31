@@ -5,8 +5,7 @@
     <classes>
       <class name="javatestNGProject.TestNgMavenExampleTest">
         <methods>
-          <include name="prameterBeforeTest"/>
-          <include name="prameterTestOne"/>
+          <include name="oneMoreTest"/>
         </methods>
       </class> <!-- javatestNGProject.TestNgMavenExampleTest -->
     </classes>

@@ -26,6 +26,7 @@ public class TestNgMavenExampleTest {
     @Test
     public void oneMoreTest() {
         System.out.println("Test Two: This is a test in QA Env");
+//        org.testng.Assert.fail("Test Failed !!");
     }
 }
 //run this from command prompt: mvn -Dtest=TestNgMavenExampleTest test
