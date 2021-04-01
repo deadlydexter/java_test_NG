@@ -9,6 +9,8 @@
 					<include name="oneMoreTest" />
 				</methods>
 			</class>
+			<class name="javatestNGProject.RunSeleniumTests">
+			</class>
 		</classes>
 	</test>
 </suite>
