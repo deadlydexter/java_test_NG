@@ -20,5 +20,9 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
+    - name:  Install Google Chrome From Shell Script
+      run:   |
+              chmod +x ./scripts/InstallChrome.sh
+                          ./scripts/InstallChrome.sh
     - name: Build with Maven
       run: mvn clean test -D suiteXmlFile=testng.xml
