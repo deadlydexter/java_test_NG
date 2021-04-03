@@ -27,8 +27,3 @@ jobs:
     - name: Build with Maven
       run: mvn clean test -D suiteXmlFile=testng.xml
       
-    - name: Create new check report
-        uses: starburstdata/action-testng-report@master
-        if: always()
-        with:
-          report_paths: "**/testng-results.xml"  
