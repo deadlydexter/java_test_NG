@@ -27,6 +27,6 @@ jobs:
     - name: Build with Maven
       run: mvn clean test -D suiteXmlFile=testng.xml
     - name: Publish Test Report
-      uses: starburstdata/action-testng-report@v1
+      uses: starburstdata/action-testng-report
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
