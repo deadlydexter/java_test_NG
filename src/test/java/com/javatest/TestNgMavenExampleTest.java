@@ -1,4 +1,4 @@
-package javatestNGProject;
+package com.javatest;
 
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;

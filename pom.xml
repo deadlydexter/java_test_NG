@@ -9,6 +9,10 @@
 	<properties>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
+
+		<sonar.sources>pom.xml,src/main,src/test</sonar.sources>
+		<sonar.tests></sonar.tests>
+
 	</properties>
 
 	<build>
@@ -23,6 +27,11 @@
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>org.sonarsource.scanner.maven</groupId>
+				<artifactId>sonar-maven-plugin</artifactId>
+				<version>3.4.0.905</version>
+			</plugin>
 		</plugins>
 	</build>
 
@@ -30,7 +39,7 @@
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
-			<version>6.14.3</version>
+			<version>7.4.0</version>
 			<scope>test</scope>
 		</dependency>
 
@@ -54,10 +63,6 @@
 			<artifactId>webdrivermanager</artifactId>
 			<version>3.8.1</version>
 		</dependency>
-
-
-
-
 
 	</dependencies>
 

@@ -1,16 +1,11 @@
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="TestNgMavenExampleSuite" parallel="false">
-	<parameter name="suite-param" value="suite level parameter" />
-	<test name="Parameter Test one">
-		<classes>
-			<class name="javatestNGProject.TestNgMavenExampleTest">
-				<methods>
-					<include name="prameterTestOne" />
-					<include name="oneMoreTest" />
-				</methods>
-			</class>
-			<class name="javatestNGProject.RunSeleniumTests">
-			</class>
-		</classes>
-	</test>
-</suite>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.javatest.RunSeleniumTests"/>
+<!--      <class name="com.javatestNG.project.TestNgMavenSecondClass"/>-->
+<!--      <class name="com.javatestNG.project.TestNgMavenExampleTest"/>-->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

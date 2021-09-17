@@ -1,4 +1,4 @@
-package javatestNGProject;
+package com.javatest;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
@@ -10,6 +10,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
 import java.util.concurrent.TimeUnit;
 
 public class RunSeleniumTests {
