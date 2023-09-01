@@ -11,7 +11,7 @@
 		<maven.compiler.target>1.8</maven.compiler.target>
 
 		<sonar.sources>pom.xml,src/main,src/test</sonar.sources>
-		<sonar.tests></sonar.tests>
+		<sonar.tests/>
 
 	</properties>
 
@@ -54,7 +54,7 @@
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
-			<version>3.141.59</version>
+			<version>4.12.0</version>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
