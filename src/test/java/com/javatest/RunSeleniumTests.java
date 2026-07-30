@@ -24,22 +24,38 @@ public class RunSeleniumTests {
 		options.addArguments("--disable-dev-shm-usage");
 		options.addArguments("--headless");
 		driver = new ChromeDriver(options);
-		driver.navigate().to("https://www.google.com");
+		driver.navigate().to("https://www.saucedemo.com/");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(120, TimeUnit.MILLISECONDS);
 	}
 
 	@Test
 	public void userLogin() {
-		WebElement searchTxt = driver.findElement(By.name("q"));
-		searchTxt.sendKeys("automation");
-		WebElement submitBtn = driver.findElement(By.name("btnK"));
-		submitBtn.click();
-		System.out.println("Current URL is:" + driver.getCurrentUrl());
-		Assert.assertTrue(driver.getTitle().contains("automation - Google Search"));
-		System.out.println("Current Title is:" + driver.getTitle());
-	}
+	    WebElement usernameTxt = driver.findElement(By.id("user-name"));
+	    usernameTxt.sendKeys("standard_user");
 
+	    WebElement passwordTxt = driver.findElement(By.id("password"));
+	    passwordTxt.sendKeys("secret_sauce");
+
+	    WebElement loginBtn = driver.findElement(By.id("login-button"));
+	    loginBtn.click();
+
+	    System.out.println("Current URL: " + driver.getCurrentUrl());
+	    System.out.println("Current title: " + driver.getTitle());
+
+	    Assert.assertTrue(
+	        driver.getCurrentUrl().contains("inventory"),
+	        "User was not redirected to the inventory page"
+	    );
+
+	    WebElement productsHeading = driver.findElement(By.className("title"));
+
+	    Assert.assertEquals(
+	        productsHeading.getText(),
+	        "Products",
+	        "Products heading was not displayed"
+	    );
+	}
 	@AfterClass
 	public void tearDown() {
 		if (driver != null) {
