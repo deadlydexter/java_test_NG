@@ -7,12 +7,12 @@
 	<version>0.0.1-SNAPSHOT</version>
 
 	<properties>
-	    <maven.compiler.release>17</maven.compiler.release>
-	    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-	    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-	
-	    <sonar.sources>pom.xml,src/main,src/test</sonar.sources>
-	    <sonar.tests/>
+		<maven.compiler.release>17</maven.compiler.release>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+		<sonar.sources>pom.xml,src/main,src/test</sonar.sources>
+		<sonar.tests />
 	</properties>
 
 	<build>
@@ -39,23 +39,31 @@
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
-			<version>7.4.0</version>
+			<version>7.11.0</version>
 			<scope>test</scope>
 		</dependency>
 
 
-		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+		<!--
+		https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
-			<version>4.21.0</version>
+			<version>4.46.0</version>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+		<!--
+		https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
 		<dependency>
 			<groupId>io.github.bonigarcia</groupId>
 			<artifactId>webdrivermanager</artifactId>
 			<version>6.3.4</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-simple</artifactId>
+			<version>2.0.17</version>
+			<scope>test</scope>
 		</dependency>
 
 	</dependencies>

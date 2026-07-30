@@ -1,5 +1,6 @@
 package com.javatest;
 
+import java.time.Duration;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -11,7 +12,6 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import java.util.concurrent.TimeUnit;
 
 public class RunSeleniumTests {
 	private WebDriver driver;
@@ -26,7 +26,7 @@ public class RunSeleniumTests {
 		driver = new ChromeDriver(options);
 		driver.navigate().to("https://www.saucedemo.com/");
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(120, TimeUnit.MILLISECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
 
 	@Test
