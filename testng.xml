@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite" verbose="10">
-  <test thread-count="1" name="Test">
-    <classes>
-      <class name="com.javatest.RunSeleniumTests"/>
-<!--      <class name="com.javatestNG.project.TestNgMavenSecondClass"/>-->
-<!--      <class name="com.javatestNG.project.TestNgMavenExampleTest"/>-->
-    </classes>
-  </test> <!-- Test -->
+	<test thread-count="1" name="Test">
+		<classes>
+			<class name="com.javatest.RunSeleniumTests" />
+			<class name="com.javatest.DataProviderExampleTest" />
+			<!-- <class name="com.javatestNG.project.TestNgMavenExampleTest"/> -->
+		</classes>
+	</test> <!-- Test -->
 </suite> <!-- Suite -->
