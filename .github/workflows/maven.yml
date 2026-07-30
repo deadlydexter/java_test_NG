@@ -5,24 +5,32 @@ name: Java CI with Maven
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Set up JDK 1.8
-      uses: actions/setup-java@v1
-      with:
-        java-version: 1.8
-    - name:  Install Google Chrome From Shell Script
-      run:   |
-              chmod +x ./scripts/InstallChrome.sh
-                          ./scripts/InstallChrome.sh
-    - name: Build with Maven
-      run: mvn clean test -D suiteXmlFile=testng.xml
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+          cache: maven
+
+      - name: Verify Java version
+        run: java -version
+
+      - name: Install Google Chrome
+        run: |
+          chmod +x ./scripts/InstallChrome.sh
+          ./scripts/InstallChrome.sh
+
+      - name: Build with Maven
+        run: mvn clean test
