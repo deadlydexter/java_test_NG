@@ -35,7 +35,14 @@ public class DataProviderExampleTest {
 
         System.out.println("Running test: " + scenarioName);
     }
+    
+    @Test
+    public void verifyAddition() {
+        int actualResult = 2 + 3;
+        int expectedResult = 5;
 
+        org.testng.Assert.assertEquals(actualResult, expectedResult);
+    }
 
 }
 //run this from command prompt: mvn -Dtest=TestNgMavenExampleTest test
